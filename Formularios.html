@@ -1,32 +1,70 @@
-<html>
-    <head><title>Ejemplo de Formulario sencillos</title></head>
+<html>    
+   
+    <head><title>Ejemplo de Formularios sencillos</title>
     <body>
-        <h3>Formulario sencillos</h3>
-        
-        <form action="https://ptsv2.com/t/smx2m08/post" method="post">
-            Escibe tu nombre
-            
-            <input type="text" name="nombre" value="" />
-                <br/>
-                Escibe tu Contrasenya
-                
-                <input type="password" name="nombre" value="" />
-                <br/>
-                
-                <input name="puesto_directivo" type="checkbox" value="Empleado" /> Empleado
-                <br/>
-                <input name="puesto_directivo" type="checkbox" value="Lampista" /> Lampista
-                <br/>
-                <input name="puesto_directivo" type="checkbox" value="Tecnic" /> Tecnico
-                <br/>
-                
-                
-                
-                <input type="submit" value="enviar" />
-
+       
+        <h3>Formularios </h3>
+       
+        <form action="https://ptsv2.com/t/smx2m08/post" method="post"></form>
+           
+                   
+        <!--Filset-->
+           
+    <fieldset style="width:20%">
+        <legend>Datos de la Persona</legend>
+      <!--Nombre -->
+           
+           <label>Escribe tu nombre</label>
+           
+        <input type="text" name="nombre" value="" />
+            <input type="hidden" name="nombre_secreto" value="nombre_secreto" checked />
+            <br/>
+        <label>Escribe tu Apellido</label>
+           
+        <input type="text" name="apellido" value="" />
+            <input type="hidden" name="nombre_secreto" value="nombre_secreto" checked />
+            <br/>
+           
+           
+        <label>Escribe tu DNI</label>
+           
+        <input type="text" name="DNI" value="" />
+            <input type="hidden" name="nombre_secreto" value="nombre_secreto" checked />
+            <br/>
+        <label>Introducce tu curriculum</label><br/>
+        <textarea  id="Descripcion" name="Descripcion" rows="5" cols="40" style="width:400px; height:50px; background:green"></textarea>
+       
+            </fieldset>  
+           
+             <!--Coontrasenya-->
+            <label>Escribe la contyrasenya</label>
+               <input type="password" name="nombre" value="" /><br/>
+           
+             <!--Checks con los Puestos de trabjo-->
+           
     
+            <label>Puestos de trabajo</label> <br/>
+               <input name="puesto_directivo" type="checkbox" value="Empleado" checked /> Empleado
+            <br/>
+             <input name="puesto_directivo" type="checkbox" value="Lampista" /> Lampista
+            <br/>
+             <input name="puesto_directivo" type="checkbox" value="Tecnic" /> Tecnico
+            <br/>
+           
+             <!--Radio button-->
+           
+            <label>Seleccion de coches</label><br/>
+           
+            <input type="radio" name="cotxes" value="Mercedes" /> Mercedes
+               <input type="radio" name="cotxes" value="BMW" /> BMW
+               <input type="radio" name="cotxes" value="Dacia" checked /> Dacia
+            <br/>
+    
+           
+        <input type="submit" value="enviar" />
+       
+       
         </form>
-    
-    
-    
+       
+       
         </body>
